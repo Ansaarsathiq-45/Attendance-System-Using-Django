@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Attendance System</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 16px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px 0;
+        }
+
+        .section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .feature-box {
+            flex: 1 1 250px;
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #3498db;
+            color: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: white;
+            color: #3498db;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            background: #ecf0f1;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Student Management & Attendance System</h1>
+    <p>Mini Project using Django Framework</p>
+</header>
+
+<div class="container">
+
+    <!-- Project Description -->
+    <div class="section">
+        <h2>Project Overview</h2>
+        <p>
+            The Student Management & Attendance System is a web-based application developed using the Django framework.
+            This system is designed to manage student records efficiently and track their daily attendance in a digital format.
+            It helps educational institutions reduce manual work, avoid errors, and maintain accurate records.
+        </p>
+    </div>
+
+    <!-- Objectives -->
+    <div class="section">
+        <h2>Project Objectives</h2>
+        <p>
+            • To maintain student details such as name, roll number, department, and contact information.<br>
+            • To record daily attendance in an easy and structured way.<br>
+            • To allow editing and deleting of attendance records.<br>
+            • To generate attendance reports in PDF format.<br>
+            • To provide a user-friendly interface for administrators and teachers.
+        </p>
+    </div>
+
+    <!-- Features -->
+    <div class="section">
+        <h2>Key Features</h2>
+        <div class="features">
+            <div class="feature-box">Student Registration & Management</div>
+            <div class="feature-box">Daily Attendance Marking</div>
+            <div class="feature-box">Edit & Delete Attendance</div>
+            <div class="feature-box">Export Attendance to PDF</div>
+            <div class="feature-box">Clean & Simple UI</div>
+            <div class="feature-box">Secure Data Handling</div>
+        </div>
+    </div>
+
+    <!-- Navigation Cards -->
+    <div class="section">
+        <h2>Quick Access</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Students</h3>
+                <p>Manage student details</p>
+                <a href="/students/">Go to Students</a>
+            </div>
+
+            <div class="card">
+                <h3>Attendance</h3>
+                <p>Mark and manage attendance</p>
+                <a href="/attendance/">Go to Attendance</a>
+            </div>
+
+            <div class="card">
+                <h3>Reports</h3>
+                <p>Download attendance reports</p>
+                <a href="/attendance/export/pdf/">Export PDF</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>Developed by Student | Django Mini Project</p>
+</footer>
+
+</body>
+</html>
